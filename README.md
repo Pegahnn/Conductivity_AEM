@@ -16,32 +16,33 @@ Unsupervised clustering (t-SNE, DBSCAN, SOM) to uncover structure–performance 
 SHAP and saliency maps for chemical interpretability
 
 
-🚀 Workflow
-1. Descriptor Generation
-Compute Mordred molecular descriptors for all SMILES in the dataset:
+🚀 Usage
+1️⃣ Generate Molecular Descriptors
+Compute Mordred descriptors for all AEM SMILES:
 
 bash
 Copy
 Edit
 jupyter notebook notebooks/mordred.ipynb
-2. Unsupervised Clustering & SHAP Analysis
-Explore structure–performance relationships using t-SNE, DBSCAN, SOM, and SHAP:
+2️⃣ Perform Unsupervised Analysis
+Explore clustering with t-SNE, DBSCAN, and SHAP:
 
 bash
 Copy
 Edit
 jupyter notebook notebooks/unsupervised_shap.ipynb
-3. Train Graph Neural Network Models
-Execute the GCN and GAT training pipeline:
+3️⃣ Train Graph Neural Networks
+Run GCN/GAT models from terminal:
 
 bash
 Copy
 Edit
 bash execute.sh
-Or run manually:
+Or manually specify a model:
 
 bash
 Copy
 Edit
 python src/GNN_workflow.py --data data/modified_data.csv --model GCNReg
-f you use this repository, please cite
+📝 Citation
+If you use this repository, please cite
