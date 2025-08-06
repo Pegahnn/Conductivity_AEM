@@ -5,7 +5,17 @@ This repository accompanies the paper:
 “Uncovering Structure–Conductivity Relationships in AEMs Using Interpretable Machine Learning”
 P. Naghshnejad, J. A. Romagnoli, R. Kumar, J. J. Chen
 
-We present a hybrid framework that integrates graph neural networks (GCN/GAT) and descriptor-based machine learning with unsupervised clustering and SHAP analysis to predict and interpret the ionic conductivity of anion exchange membranes (AEMs).
+We propose a hybrid machine learning framework combining:
+
+Graph Neural Networks (GCN & GAT) for learning molecular topology
+
+Descriptor-based models (CatBoost, XGBoost, Random Forest) for interpretability
+
+Unsupervised clustering (t-SNE, DBSCAN, SOM) to uncover structure–performance patterns
+
+SHAP and saliency maps for chemical interpretability
+
+
 🚀 Workflow
 1. Descriptor Generation
 Compute Mordred molecular descriptors for all SMILES in the dataset:
