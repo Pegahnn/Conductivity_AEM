@@ -1,5 +1,5 @@
 # Conductivity_AEM
-ncovering Structure–Conductivity Relationships in AEMs Using Interpretable Machine Learning
+Uncovering Structure–Conductivity Relationships in AEMs Using Interpretable Machine Learning
 This repository accompanies the paper:
 
 “Uncovering Structure–Conductivity Relationships in AEMs Using Interpretable Machine Learning”
