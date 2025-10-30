@@ -1,14 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Apr 14 14:27:52 2020
-
-Modified on Mon Oct 02 11:01:36 2023
-
-@author: sqin34
-@modified by: Teslim
-"""
-
-# https://docs.dgl.ai/en/0.4.x/tutorials/basics/4_batch.html
 
 import dgl
 import torch
@@ -462,3 +451,4 @@ class MPNNReg_add(nn.Module):
         x = F.relu(self.fc2(x))
         out = self.out(x)
         return out
+
