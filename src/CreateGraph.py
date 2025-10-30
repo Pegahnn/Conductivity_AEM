@@ -1,12 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Feb 20 01:49:12 2020
-Modified on Mon Oct 02 11:01:36 2023
 
-@author: sqin34
-@modified by: Teslim
-@fixes: Pegah (ensure float labels/descriptors for regression tasks)
-"""
 import torch
 import dgl
 from dgllife.utils import BaseAtomFeaturizer, CanonicalAtomFeaturizer, CanonicalBondFeaturizer 
@@ -287,3 +279,4 @@ def collate_multi_rdkit(samples):
             torch.tensor(descriptors1, dtype=torch.float),
             torch.tensor(descriptors2, dtype=torch.float),
             torch.tensor(labels, dtype=torch.float).unsqueeze(-1))
+
